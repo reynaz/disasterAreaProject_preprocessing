@@ -65,8 +65,14 @@ def view_colored_point_cloud(file_path):
 
 if __name__ == "__main__":
     # Görüntülemek istediğin dosya
-
- 
-    target_path = os.path.join("data", "processed", "RS000016_unity_scaled.laz")
+   # target_path = os.path.join("data", "processed_data", "RS000016_unity_scaled.laz")
+    #target_path = os.path.join("data", "processed_data", "RS000016_unity_scaled.laz")
+   # target_path = os.path.join("data", "processed", "tiles","tile_0_0", "raw.las")
+    #target_path = os.path.join("data", "processed", "tiles","tile_1_0", "raw.las")
+    target_path = os.path.join("data", "processed", "tiles","tile_0_0", "ground.las")
+   # target_path = os.path.join("data", "processed", "tiles","tile_1_0", "ground.las")
+   
+    
+    
     
     view_colored_point_cloud(target_path)

@@ -18,7 +18,7 @@ def visualize_combined_ground_pcd(tiles_base_dir, max_points_per_tile=None):
         max_points_per_tile (int, optional): Her tile'dan yüklenecek maksimum nokta sayısı.
     """
     file_to_load = "ground.pcd"
-    search_pattern = os.path.join(tiles_base_dir, "*", file_to_load)
+    search_pattern = os.path.join(tiles_base_dir, "", file_to_load)
     pcd_files = glob.glob(search_pattern)
 
     if not pcd_files:
